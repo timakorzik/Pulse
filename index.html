@@ -10,6 +10,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -17,7 +18,7 @@
 <body>
     <section class="promo">
         <div class="container">
-            <header class="header promo__header">
+            <header class="header promo__header animate__animated animate__flipInX">
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <a href="/" class="header__logo">
@@ -40,9 +41,9 @@
                 </div>
             </header>
             <div class="promo__wrapper">
-                <h1 class="promo__title">Подбор пульсометра</h1>
-                <h2 class="promo__subtitle">с учётом Вашего уровня подготовки</h2>
-                <div class="promo__icons">
+                <h1 class="promo__title animate__animated animate__fadeInLeft animate__delay-1s">Подбор пульсометра</h1>
+                <h2 class="promo__subtitle animate__animated animate__fadeInLeft animate__delay-2s">с учётом Вашего уровня подготовки</h2>
+                <div class="promo__icons animate__animated animate__zoomInDown animate__delay-2s">
                     <div class="row">
                         <div class="col-md-4">
                             <img src="img/icons/promo_icon_1.png" alt="">
@@ -58,9 +59,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="button button_main" data-toggle="modal" data-target="#callbackModal">заказать
+                <button class="button button_main animate__animated animate__fadeIn animate__delay-3s" data-toggle="modal" data-target="#callbackModal">заказать
                     кОНСУЛЬТАЦИЮ</button>
-                <div class="promo__links">
+                <div class="promo__links animate__animated animate__fadeIn animate__delay-3s">
                     или <a href="#"> ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
@@ -70,10 +71,11 @@
     <section class="advantages">
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="row">
+            <div class="row wow animate__animated animate__zoomInDown" data-wow-offset="10" data-wow-delay="1s" >
                 <div class="col-md-4">
                     <div class="advantages__item">
-                        <img src="img/advantages/cup.png" alt="Делимся опытом">
+                        <img class="advantages__icon advantages__icon_animate-1" src="img/advantages/cup.png"
+                            alt="Делимся опытом">
                         <h3 class="advantages__title">Делимся опытом</h3>
                         <p class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами
                             бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
@@ -81,7 +83,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="advantages__item">
-                        <img src="img/advantages/heart.png" alt="Заботимся о здоровье">
+                        <img class="advantages__icon advantages__icon_animate-2" src="img/advantages/heart.png"
+                            alt="Заботимся о здоровье">
                         <h3 class="advantages__title">Заботимся о здоровье</h3>
                         <p class="advantages__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
                             Вашему здоровью и были в радость Вам и Вашим близким!</p>
@@ -89,7 +92,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="advantages__item">
-                        <img src="img/advantages/shoe.png" alt="Учим бегать">
+                        <img class="advantages__icon advantages__icon_animate-3" src="img/advantages/shoe.png"
+                            alt="Учим бегать">
                         <h3 class="advantages__title">Учим бегать</h3>
                         <p class="advantages__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей
                             школой бега в России - <a href="#">I LOVE RUNNING.</a></p>
@@ -100,8 +104,8 @@
     </section>
 
     <section class="consultation">
-        <div class="container">
-            <h2 class="title consultation__title">Получите бесплатную консультацию по подбору пульсометра </h2>
+        <div class="container wow animate__animated animate__zoomInDown">
+            <h2 class="title consultation__title ">Получите бесплатную консультацию по подбору пульсометра </h2>
             <p class="consultation__text">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
             <form class="consultation__form main-form needs-validation" novalidate>
                 <div class="form-group">
@@ -125,7 +129,7 @@
         </div>
     </section>
     <section class="home-slider">
-        <div class="container">
+        <div class="container wow animate__animated animate__zoomInDown">
             <div class="home-slider__wrapper">
                 <div><img src="img/slider/slide1.png" alt=""></div>
                 <div><img src="img/slider/slide2.png" alt=""></div>
@@ -134,7 +138,7 @@
         </div>
     </section>
     <section class="katalog">
-        <div class="container">
+        <div class="container wow animate__animated animate__zoomInDown">
             <h2 class="title title_thin">Каталог пульсометров</h2>
             <div class="katalog__tabs">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -596,7 +600,8 @@
                             <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" placeholder="Ваш телефон" autocomplete="off">
+                            <input type="tel" name="phone" class="form-control" placeholder="Ваш телефон"
+                                autocomplete="off">
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" placeholder="Ваш E-mail">
@@ -624,7 +629,7 @@
                             <input type="text" name="your-name" class="form-control" placeholder="Ваше имя">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="your-phone" class="form-control" placeholder="Ваш телефон" >
+                            <input type="tel" name="your-phone" class="form-control" placeholder="Ваш телефон">
                         </div>
                         <div class="form-group">
                             <input type="email" name="your-email" class="form-control" placeholder="Ваш E-mail">
@@ -662,6 +667,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/messages_ru.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
